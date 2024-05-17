@@ -1,0 +1,120 @@
+:root{
+    --primary1Color: hsl(199, 100%, 33%);
+    --whileColorDeam: hsl(0, 0%, 93%);
+}
+//booking section
+.admsection{
+    transform: translateY(80px);
+    
+    
+.headersection{
+    text-align: center;
+    margin-left: 10%;
+
+    img{
+        width: 350px;
+        border-radius: 50%;
+        border: inherit;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        
+    }
+}
+}
+//end of booking section
+//footer section
+.footer{
+    transform: translateY(150px);
+      padding: 60px 5% 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+      gap: 2rem;
+      background: black;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      .footer-content h4{
+        color: #fff;
+        margin-bottom: 1.5rem;
+        font-size: 20px;
+      }
+      .footer-content li{
+        margin-bottom: 16px;
+        display: block;
+        color: var(--primary1Color);
+        font-size: 15px;
+        font-weight: 400;
+        transition: all .40s ease;
+
+    }
+    .footer-content li:hover{
+        transform: translateY(-3px) translateY(-5px);
+        color: var(--whileColorDeam);
+        cursor: pointer;
+    }
+     .footer-content p{
+        color: var(--whileColorDeam);
+        font-size: 16px;
+        line-height: 30px;
+        margin: 20px 0;
+        width: 80%;
+       
+     }
+        
+            img{
+                width: 120px;
+                border-radius: 50%;
+                border: 3px solid var(--primary1Color);
+                
+            }
+           .icons{
+            display: inline-block;
+            font-size: 25px;
+            color: #d6d6d6;
+            margin-right: 17px;
+            transition: all .40s ease;
+            gap: 1rem;
+           }
+           .icons span:hover{
+            color: var(--primary1Color);
+            transform: translateY(-5px);
+           }
+           
+    
+}
+@media (max-width:1690px){
+    .footer{
+        padding: 50px 5% 40px;
+    }
+}
+@media (max-width:1120px){
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        gap: 2rem;
+    }
+}
+@media (max-width:700px){
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+        gap: 2.5rem;
+    }
+}
+
+//end of footer section
+//button section
+.subbtn{
+    color: #fff;
+}
+.viewbtn{
+    background: green;
+    float: right;
+    color: #fff;
+
+    .viewbtn:hover{
+        background: var(--whileColorDeam);
+        color: black;
+
+    }
+}

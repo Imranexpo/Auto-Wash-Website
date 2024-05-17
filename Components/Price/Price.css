@@ -1,0 +1,34 @@
+.root {
+  --greyText: hsl(0, 0%, 75%);
+}
+
+.cardfull {
+  transform: translateY(110px);
+}
+
+.cardsection {
+  transform: translateY(10px);
+  border: inherit;
+  background: var(--greyText);
+}
+
+.about_section {
+  transform: translateY(180px);
+}
+.about_section .row {
+  align-items: center;
+}
+.about_section .img_container img {
+  width: 100%;
+}
+.about_section .detail-box {
+  background-color: var(--greyText);
+  padding: 45px 25px;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.242);
+  position: relative;
+  margin-left: -45px;
+  border: inherit;
+}
+.about_section p {
+  margin-top: 5px;
+}/*# sourceMappingURL=Price.css.map */

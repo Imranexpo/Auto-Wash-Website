@@ -1,0 +1,100 @@
+.root {
+  --greyText: hsl(0, 0%, 75%);
+  --whileColorDeam: hsl(0, 0%, 93%);
+}
+
+.service-page {
+  transform: translateY(90px);
+  padding: 50px 0;
+}
+.service-page .service-details {
+  padding: 0 20px;
+}
+.service-page .service-details .service-list {
+  margin-top: 30px;
+}
+.service-page .service-details .service-list .service-card {
+  margin-bottom: 20px;
+  border: inherit;
+  background: hsl(0, 30%, 79%);
+}
+.service-page .gallery {
+  position: relative;
+}
+.service-page .gallery .image-gallery {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  z-index: 1;
+}
+.service-page .gallery .image-gallery .image-gallery img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.container {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.testimonials {
+  transform: translateY(50px);
+  padding: 100px 0;
+}
+.testimonials .testimonials-item {
+  background-color: var(--greyText);
+  padding: 30px;
+  border-radius: 30px;
+}
+.testimonials .testimonials-item .testimonials-item .info {
+  display: flex;
+  align-items: center;
+}
+
+.testimonials-item .name {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: black;
+  line-height: 1.2;
+}
+
+.testimonials-item .job {
+  margin-top: 15px;
+  color: hsl(0, 11%, 40%);
+}
+
+.testimonials-item p {
+  margin-top: 20px;
+  color: hsl(0, 11%, 40%);
+}
+
+.testimonials-item .rating {
+  margin-top: 15px;
+  font-size: 14px;
+  color: hsl(36, 88%, 66%);
+}
+
+.testimonials .swiper-pagination {
+  position: absolute;
+  margin-top: 40px;
+  bottom: auto;
+}
+
+.testimonials .swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  background-color: var(--greyText);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section-header .section-header .title {
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.2;
+}/*# sourceMappingURL=Service.css.map */

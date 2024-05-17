@@ -1,0 +1,38 @@
+.root{
+    --greyText: hsl(0, 0%, 75%);
+}
+
+.cardfull{
+    transform: translateY(110px);
+}
+.cardsection{
+    transform: translateY(10px);
+    border: inherit;
+    background: var(--greyText);
+    
+}
+//about section
+.about_section{
+    transform: translateY(180px);
+    .row{
+        align-items: center;
+    }
+    .img_container{
+        img{
+            width: 100%;
+        }
+    }
+    .detail-box{
+        background-color: var(--greyText);
+        padding: 45px 25px;
+        box-shadow: 0 2px 4px rgba(2, 15, 29, 0.242);
+        position: relative;
+        margin-left: -45px;
+        border: inherit;
+        
+    }
+    p{
+        margin-top: 5px;
+    }
+}
+//end of about section

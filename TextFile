@@ -1,0 +1,18 @@
+so we have two folders
+
+client and server
+
+client - will hold our frontend
+server - will hold our Express Server
+
+Lets create the component now!!
+
+remember that these will be in differen routes/pages
+so we need to create routes...
+
+i think its clear
+
+lets build these pages now...
+
+so ok we have all the components and styling almost done.
+Im going to make it responsive first and get to implement the backend and dashboard component

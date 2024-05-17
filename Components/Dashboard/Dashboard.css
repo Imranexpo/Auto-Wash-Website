@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  background: var(--whileColorDeam);
+}
+
+:root {
+  --primaryColor: hsl(94, 55%, 56%);
+  --secondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --primary1Color: hsl(199, 100%, 33%);
+  --textColor: hsl(240, 4%, 36%);
+  --whileColorDeam: hsl(0, 0%, 93%);
+  --orangeColor: hsl(30, 100%, 40%);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --hoverColor: hsl(93, 75%, 76%);
+  --paleGreen: hsl(96, 75%, 89%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 75%);
+  --bgColor: hsl(113, 11%, 85%);
+  --inputColor: hsl(330, 12%, 97%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.btn1 {
+  padding: 0.6rem 1.5rem;
+  background: var(--gradientColor);
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn1 a {
+  color: white;
+  font-weight: 500;
+}
+
+.btn1:hover {
+  background: var(--secondaryColor);
+}
+
+.icon1 {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.icon1 {
+  font-size: var(--h2FontSize);
+  cursor: pointer;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--whileColorDeam);
+  width: 100%;
+  padding: 0.5rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.242);
+}
+.header .logo {
+  color: var(--blackColor);
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.header .logo .icon1 {
+  font-size: 27px;
+  color: var(--primary1Color);
+  transform: translateY(-3px);
+}
+.header .icon2 {
+  font-size: 25px;
+  color: var(--orangeColor);
+}
+@media screen and (max-width: 768px) {
+  .header .navBar {
+    position: absolute;
+    background: var(--whileColorDeam);
+    height: -moz-max-content;
+    height: max-content;
+    width: 80%;
+    border-radius: 1rem;
+    top: -500rem;
+    left: 50%;
+    padding: 1rem;
+    transform: translate(-50%);
+    z-index: 2000;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+    transition: 0.1s ease-in-out;
+  }
+  .header .navBar .navLists {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 0.5rem 0;
+  }
+  .header .navBar .navLists .navItem {
+    padding: 0.5rem 0;
+  }
+  .header .navBar .navLists .navItem .navLink {
+    color: var(--textColor);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .header .navBar .navLists .navItem .navLink:hover {
+    color: var(--primary1Color);
+    border-bottom: 2px solid var(--primary1Color);
+  }
+  .header .navBar .navLists .btn1 {
+    margin-top: 1rem;
+  }
+  .header .navBar .navLists .btn1 a {
+    font-weight: 600;
+    color: var(--whiteColor);
+  }
+  .header .navBar .closeNavbar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: var(--primary1Color);
+  }
+  .header .navBar .closeNavbar .icon1 {
+    font-size: 25px;
+  }
+  .header .navBar .closeNavbar:hover {
+    color: var(--secondaryColor);
+  }
+  .header .activeNavbar {
+    top: 7rem;
+  }
+}
+.header .toggleNavbar .icon1 {
+  font-size: 30px;
+  color: var(--primary1Color);
+}
+.header .toggleNavbar:hover.icon {
+  color: var(--secondaryColor);
+}
+
+@media screen and (min-width: 1000px) {
+  .navLists {
+    gap: 3rem;
+    transform: translateY(4px);
+    margin-right: 1rem;
+  }
+  .navLists .navLink:hover {
+    color: var(--primary1Color);
+    border-bottom: 2px solid var(--primary1Color);
+  }
+  .closeNavbar {
+    display: none;
+  }
+  .toggleNavbar {
+    display: none;
+  }
+}
+.carousel1 {
+  margin-bottom: 16%;
+}
+
+.about-us {
+  transform: translateY(30px);
+}
+
+.about-content {
+  transform: translateY(30px);
+}
+.about-content p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.about-list {
+  transform: translateY(30px);
+}
+.about-list ul {
+  font-size: 20px;
+}
+.about-list ul li {
+  font-weight: 400;
+}
+.about-list ul .iconses {
+  color: var(--primaryColor);
+}
+
+.service {
+  transform: translateY(80px);
+  overflow: hidden;
+}
+.service .carsection {
+  transform: translateY(10px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
+  grid-gap: 20px; /* Adjust as needed */
+}
+.service .carsection .cardstart {
+  background: hsl(0, 30%, 79%);
+  border: inherit;
+  gap: 10px;
+}
+.service .carsection .cardstart .cardicon {
+  font-size: 40px;
+  margin-top: 0.5rem;
+  transform: translateX(5px);
+}
+
+.cartime {
+  transform: translateY(150px);
+}
+.cartime ul {
+  font-size: 20px;
+  font-weight: normal;
+}
+.cartime .incar {
+  transform: translateY(20px);
+}
+.cartime .tmicon {
+  font-size: 20px;
+}
+
+.facts {
+  transform: translateY(180px);
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  margin: 45px 0;
+  display: flex;
+  align-items: center;
+  background: black;
+}
+.facts .facts-item {
+  display: flex;
+  flex-direction: row;
+  margin: 25px 0;
+}
+.facts .facts-item .ico1 {
+  color: white;
+}
+.facts .facts-item .ico {
+  margin-top: 15px;
+  font-size: 45px;
+  color: var(--primary1Color);
+}
+.facts .facts-text {
+  padding-left: 20px;
+}
+.facts .facts-text p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+.facts .facts-text h3 {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.team {
+  transform: translateY(200px);
+}
+.team .teamsection {
+  transform: translateY(30px);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.team .teamsection .cardsection {
+  width: 300%;
+  height: 100%;
+  background: hsl(0, 30%, 79%);
+}
+.team .teamsection ul {
+  display: flex;
+  justify-content: center;
+  background: black;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 500;
+  gap: 2.3rem;
+  border: inherit;
+  margin: 0 30px 0 30px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 20px;
+}
+.team .teamsection ul li:hover {
+  color: var(--primary1Color);
+  cursor: pointer;
+}
+
+.dashfooter {
+  margin-top: 10rem;
+  position: static;
+}/*# sourceMappingURL=Dashboard.css.map */
